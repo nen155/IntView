@@ -27,8 +27,8 @@ export class DashboardComponent implements OnInit {
       interviews.forEach(interview => {
         this.candidacysService.getCandidacysByIdInterview(interview.id,0)
         .subscribe(candidacys => {
-          this.candidacys.push()
-          //this.candidacys = ;
+          //this.candidacys.push()
+          this.candidacys = candidacys;
         });
       })
 
