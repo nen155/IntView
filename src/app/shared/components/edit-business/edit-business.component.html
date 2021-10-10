@@ -1,0 +1,69 @@
+<div>
+    <div class="add-title">
+        <h2 class="primary">{{ 'business.edit' | translate }}</h2>
+    </div>
+    <div>
+        <form [formGroup]="form">
+            <p>
+                <mat-form-field>
+                    <input matInput placeholder="Nombre" formControlName="name" required>
+                    <mat-error *ngIf="form.controls.name.hasError('required')">
+                        Introduce nombre de empresa
+                    </mat-error>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input matInput placeholder="CIF" formControlName="cif" required>
+                    <mat-error *ngIf="form.controls.cif.hasError('required')">
+                        Introduce CIF
+                    </mat-error>
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field>
+                    <input matInput placeholder="Dirección" formControlName="address" required>
+                    <mat-error *ngIf="form.controls.address.hasError('required')">
+                        Introduce una dirección
+                    </mat-error>
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field>
+                    <input matInput placeholder="Teléfono" formControlName="phone" required>
+                    <mat-error *ngIf="form.controls.phone.hasError('required')">
+                        Introduce un teléfono
+                    </mat-error>
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field>
+                    <input matInput placeholder="Método de pago" formControlName="payment_mode" required>
+                    <mat-error *ngIf="form.controls.payment_mode.hasError('required')">
+                        Introduce un método de pago
+                    </mat-error>
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field>
+                    <input matInput placeholder="Video de presentación" formControlName="presentation_video" required>
+                    <mat-error *ngIf="form.controls.presentation_video.hasError('required')">
+                        Introduce un vídeo de presentación
+                    </mat-error>
+                </mat-form-field>
+            </p>
+
+
+            <div class="display-flex">
+                <span fxFlex></span>
+                <span class="spacer"></span>
+                <button [disabled]="!form.valid" mat-raised-button type="submit" color="primary"
+                    (click)="editBusiness()">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>

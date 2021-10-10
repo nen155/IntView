@@ -1,0 +1,104 @@
+
+<mat-card [class.mat-elevation-z8]="true" class="example-box" [formGroup]="singleQuestionForm">
+  <div class="d-flex mb-3">
+    <div class="d-flex p-2 justify-content-start" style="width: 100%;">
+      <h5>{{'questions.question' | translate}} {{number}}</h5>
+    </div>
+    <div class="d-flex p-2 justify-content-end" style="width: 100%;">
+      <button mat-mini-fab color="warn"  class="closeButton" (click)="removeEvent.next(number)"><mat-icon class="closeButtonIcon">close</mat-icon></button>
+    </div>
+  </div>
+  <mat-card-content>
+    <p>
+    <mat-form-field appearance="outline" class="text-input">
+      <mat-label>{{'questions.questionLabel' | translate}}</mat-label>
+      <input matInput placeholder="{{'questions.questionPlaceholder' | translate}}"   formControlName="titleForm" required>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline" class="text-input">
+      <mat-label>{{'questions.questionDescriptionLabel' | translate}}</mat-label>
+      <textarea matInput placeholder="{{'questions.questionDescriptionPlaceholder' | translate}}"  formControlName="descriptionForm"></textarea>
+    </mat-form-field>
+  </p>
+  <table style="border-spacing: 1px;border-collapse: separate;">
+    <tr>
+      <td>
+        <mat-form-field appearance="outline">
+          <mat-label>{{'questions.retry' | translate}}</mat-label>
+          <mat-select  formControlName="retryForm">
+            <mat-option value="0">0</mat-option>
+            <mat-option value="1">1</mat-option>
+            <mat-option value="2">2</mat-option>
+            <mat-option value="3">3</mat-option>
+            <mat-option value="4">4</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field appearance="outline">
+          <mat-label>{{'questions.answerTime' | translate}}</mat-label>
+          <mat-select  formControlName="answerTimeForm">
+            <mat-option value="15">15s</mat-option>
+            <mat-option value="30">30s</mat-option>
+            <mat-option value="40">40s</mat-option>
+            <mat-option value="60">1m</mat-option>
+            <mat-option value="90">1m 30s</mat-option>
+            <mat-option value="120">2m</mat-option>
+            <mat-option value="150">2m 30s</mat-option>
+            <mat-option value="180">3m</mat-option>
+            <mat-option value="210">3m 30s</mat-option>
+            <mat-option value="240">4m</mat-option>
+            <mat-option value="270">4m 30s</mat-option>
+            <mat-option value="300">5m</mat-option>
+            <mat-option value="330">5m 30s</mat-option>
+            <mat-option value="360">6m</mat-option>
+            <mat-option value="390">6m 30s</mat-option>
+            <mat-option value="420">7m</mat-option>
+            <mat-option value="450">7m 30s</mat-option>
+            <mat-option value="480">8m</mat-option>
+            <mat-option value="510">8m 30s</mat-option>
+            <mat-option value="540">9m</mat-option>
+            <mat-option value="570">9m 30s</mat-option>
+            <mat-option value="600">10m</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <mat-form-field appearance="outline">
+          <mat-label>{{'questions.questionTime' | translate}}</mat-label>
+          <mat-select  formControlName="readTimeForm">
+            <mat-option value="15">15s</mat-option>
+            <mat-option value="30">30s</mat-option>
+            <mat-option value="40">40s</mat-option>
+            <mat-option value="60">1m</mat-option>
+            <mat-option value="90">1m 30s</mat-option>
+            <mat-option value="120">2m</mat-option>
+            <mat-option value="150">2m 30s</mat-option>
+            <mat-option value="180">3m</mat-option>
+            <mat-option value="210">3m 30s</mat-option>
+            <mat-option value="240">4m</mat-option>
+            <mat-option value="270">4m 30s</mat-option>
+            <mat-option value="300">5m</mat-option>
+            <mat-option value="330">5m 30s</mat-option>
+            <mat-option value="360">6m</mat-option>
+            <mat-option value="390">6m 30s</mat-option>
+            <mat-option value="420">7m</mat-option>
+            <mat-option value="450">7m 30s</mat-option>
+            <mat-option value="480">8m</mat-option>
+            <mat-option value="510">8m 30s</mat-option>
+            <mat-option value="540">9m</mat-option>
+            <mat-option value="570">9m 30s</mat-option>
+            <mat-option value="600">10m</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </td>
+      <td>
+          <mat-checkbox matInput formControlName="importantForm">{{'questions.important' | translate}}</mat-checkbox>
+      </td>
+    </tr>
+  </table>
+  </mat-card-content>
+</mat-card>

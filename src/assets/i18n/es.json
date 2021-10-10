@@ -1,0 +1,117 @@
+{
+    "toolbar": {
+        "login": "Login",
+        "dashboard": "Escritorio",
+        "interviews": "Entrevistas",
+        "jobs": "Trabajos",
+        "users": "Usuarios",
+        "billing": "Facturación",
+        "business": "Mi Empresa"
+    },
+
+    "general": {
+        "email": "Email",
+        "invalidEmail": "Email incorrecto",
+        "password": "Contraseña",
+        "name": "Nombre",
+        "surname": "Apellidos",
+        "repeatPassword": "Repita la ontraseña",
+        "register": "Registrarse",
+        "login": "Login",
+        "back": "Atrás",
+        "actions": "Actions",
+        "createAccount": "Crear una cuenta",
+        "createdBy": "Creado por",
+        "createdAt": "Fecha de creacion",
+        "next": "Siguiente",
+        "fillUser": "Rellena usuario",
+        "fillBusiness": "Rellena empresa"
+    },
+
+    "sidemenu": {
+        "dashboard": "Escritorio",
+        "interviews": "Entrevistas",
+        "interview-progress": "Progreso",
+        "jobs": "Trabajos",
+        "users": "Usuarios",
+        "billing": "Facturación",
+        "business": "Mi Empresa"
+    },
+
+    "business": {
+        "name": "Nombre",
+        "email": "Email",
+        "address": "Dirección",
+        "phone": "Telefono",
+        "logo": "Logo",
+        "profilePicture": "Imagen de perfil",
+        "cif": "CIF",
+        "creationDate": "Fecha de creación",
+        "video": "Video",
+        "edit": "Editar"
+    },
+    "interview":{
+      "candidates": "Candidatos",
+      "job":"Puesto",
+      "interviewArchived": "Entrevistas Archivadas",
+      "interviews": "Entrevistas",
+      "rejectCandidates": "Candidatos rechazados",
+      "passCandidates": "Candidatos aceptados",
+      "hireCandidates": "Candidatos contratados",
+      "states":[
+        {"value": "candidate", "name": "Candidatos"},
+        {"value": "reject", "name": "Candidatos rechazados"},
+        {"value": "pass", "name": "Candidatos aceptados"},
+        {"value": "hired", "name": "Candidatos contratados"}
+      ],
+      "jobTitle":"Nombre del puesto",
+      "charactersToFillPlaceholder":"4 carácteres mínimo...",
+      "skills": "Habilidades",
+      "newSkillPlaceholder": "Presiona ENTER para añadir una habilidad...",
+      "jobDescription": "Descripción",
+      "descriptionJobPlaceholder": "Describe el puesto que quieres cubrir...",
+      "experienceJobPlaceholder": "Numero de años de experiencia requeridos...",
+      "jobExperience": "Experiencia",
+      "experienceList":[
+        {"value":0,"name":"Sin experiencia"},
+        {"value":1,"name":"1 año"},
+        {"value":2,"name":"2 años"},
+        {"value":3,"name":"3 años"},
+        {"value":4,"name":"4 años"},
+        {"value":5,"name":"+5 años"}
+      ]
+    },
+    "dashboard":{
+      "questions":"Preguntas",
+      "interviews": "Entrevistas",
+      "interviewed": "Entrevistados",
+      "createInterview":"Crear entrevista"
+    },
+    "questions":{
+      "question":"Pregunta",
+      "retry":"Reintentos",
+      "answerTime":"Tiempo limite",
+      "questionTime":"Tiempo lectura",
+      "important":"Pregunta esencial",
+      "questionPlaceHolder": "Escribe tu pregunta aquí...",
+      "questionLabel":"Pregunta",
+      "questionDescriptionPlaceholder":"Describe la pregunta si lo necesita...",
+      "questionDescriptionLabel":"Descripcion pregunta",
+      "addQuestion":"Añadir pregunta",
+      "questionsBaseList":[
+        {"id":1, "description":"","title":"Por favor, haz una presentación de tu persona", "answerTime":120, "readTime":30, "important": false, "retries":0 },
+        {"id":2, "description":"","title":"¿Qué te hace ser la mejor persona para este puesto?", "answerTime":120, "readTime":30, "important": true, "retries":0 }
+      ]
+    },
+    "candidate":{
+      "fullNamePlaceHolder": "Nombre completo",
+      "phonePlaceHolder": "Introduce un numero de telefono",
+      "addCandidate": "Añadir candidato"
+
+    },
+    "users": {
+      "add": "Añadir usuario",
+      "creationDate": "Fecha de alta",
+      "search": "Buscar"
+    }
+}

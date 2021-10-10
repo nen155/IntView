@@ -1,0 +1,93 @@
+<mat-action-list fxLayout="row" style="margin-bottom: 10px;">
+  <button mat-button [matMenuTriggerFor]="menu" color="secondary"><mat-icon>filter_list</mat-icon><span class="d-none d-sm-none d-md-inline"> Filtros</span></button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="onClickFilterScore(false)"><mat-icon>score</mat-icon>Puntuación candidato</button>
+    <button mat-menu-item (click)="onClickFilterScore(true)"><mat-icon>show_chart</mat-icon>Puntuación pregunta</button>
+    <button disabled mat-menu-item><mat-icon>assessment</mat-icon>Habilidades</button>
+    <button disabled mat-menu-item><mat-icon>assignment_ind</mat-icon>Experiencia</button>
+    <button mat-menu-item (click)="onClickClearFilters()"><mat-icon>clear</mat-icon>Limpiar filtros</button>
+  </mat-menu>
+<mat-divider [vertical]="true"></mat-divider>
+<button mat-button color="green"><mat-icon>share</mat-icon><span class="d-none d-sm-none d-md-inline"> Invitaciones</span></button>
+<mat-divider [vertical]="true"></mat-divider>
+<button mat-button color="warn"><mat-icon>lock</mat-icon><span class="d-none d-sm-none d-md-inline"> Archivar</span></button>
+<mat-divider [vertical]="true"></mat-divider>
+<button mat-button color="primary"><mat-icon>edit</mat-icon> <span class="d-none d-sm-none d-md-inline"> Editar</span></button>
+</mat-action-list>
+<mat-action-list fxLayout="row"><button *ngFor="let filter of filtersAppliedToState" mat-button style="font-size:small;font-weight: 200;" (click)="onClickClearFilter(filter)"><mat-icon>clear</mat-icon>{{filter.name}}</button></mat-action-list>
+<mat-card class="example-container">
+  <h5>{{ 'interview.candidates' | translate }}</h5>
+
+  <div
+    cdkDropList
+    #allCandidates="cdkDropList"
+    [cdkDropListData]="candidates"
+    [cdkDropListConnectedTo]="[allRejectCandidates,allPassCandidates,allHireCandidates]"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    <div *ngFor="let candidate of candidates" cdkDrag>
+      <app-card-candidate  [candidate]="candidate" [idInterview]="idInterview"></app-card-candidate>
+    </div>
+
+  </div>
+</mat-card>
+
+<mat-card class="example-container">
+  <h5>{{ 'interview.rejectCandidates' | translate }}</h5>
+
+  <div
+    cdkDropList
+    #allRejectCandidates="cdkDropList"
+    [cdkDropListData]="rejectCandidates"
+    [cdkDropListConnectedTo]="[allPassCandidates,allCandidates,allHireCandidates]"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    <div *ngFor="let candidate of rejectCandidates" cdkDrag>
+      <app-card-candidate  [candidate]="candidate" [idInterview]="idInterview" ></app-card-candidate>
+    </div>
+  </div>
+</mat-card>
+
+<mat-card class="example-container">
+  <h5>{{ 'interview.passCandidates' | translate }}</h5>
+
+  <div
+    cdkDropList
+    #allPassCandidates="cdkDropList"
+    [cdkDropListData]="passCandidates"
+    [cdkDropListConnectedTo]="[allRejectCandidates,allCandidates,allHireCandidates]"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    <div *ngFor="let candidate of passCandidates" cdkDrag>
+      <app-card-candidate  [candidate]="candidate" [idInterview]="idInterview"></app-card-candidate>
+    </div>
+  </div>
+</mat-card>
+
+<mat-card class="example-container">
+  <h5>{{ 'interview.hireCandidates' | translate }}</h5>
+
+  <div
+    cdkDropList
+    #allHireCandidates="cdkDropList"
+    [cdkDropListData]="hireCandidates"
+    [cdkDropListConnectedTo]="[allPassCandidates,allRejectCandidates,allCandidates]"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    <div *ngFor="let candidate of hireCandidates" cdkDrag>
+      <app-card-candidate  [candidate]="candidate" [idInterview]="idInterview"></app-card-candidate>
+    </div>
+  </div>
+
+</mat-card>
+<!-- Este sitio probablemente lo reservemos para el chat -->
+<!--
+<mat-fab-menu color="primary"
+              direction="top"
+              [fabButtons]="fabButtonsMenu" style="  position: fixed;
+              width: 56px;
+              right: 5%;
+              bottom: 15px;
+              margin-left: -28px;">
+</mat-fab-menu>
+-->

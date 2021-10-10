@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Infowork",
+        "email": "echica@infowork.es",
+        "cif": "asd",
+        "address": "El padul",
+        "phone": "665233341",
+        "payment": "Granada",
+        "presentationVideo": "presentacion1.mp4"
+    },
+    {
+        "id": 2,
+        "name": "ELCA",
+        "email": "aest@elca.com",
+        "cif": "asd",
+        "address": "El padul",
+        "phone": "666333999",
+        "payment": "Granada",
+        "presentationVideo": "presentacion2.mp4"
+    }
+]

@@ -1,0 +1,57 @@
+
+  <form [formGroup]="jobForm" class="form-add" (ngSubmit)="onSubmit()" >
+    <h4 class="title-form">¿Cual es el puesto que tiene que cubrir la entrevista?</h4>
+    <h1> </h1>
+    <p>
+    <mat-form-field class="text-input" appearance="outline">
+      <mat-label>{{'interview.jobTitle' | translate}}</mat-label>
+      <input matInput placeholder="{{'interview.charactersToFillPlaceholder' | translate}}" formControlName="jobTitle" required>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="skills-chips" appearance="outline">
+      <mat-label>{{'interview.skills' | translate}}</mat-label>
+      <mat-chip-list #chipList>
+        <mat-chip
+          *ngFor="let skill of skills"
+          [selectable]="true"
+          [removable]="true"
+          (removed)="remove(skill)">
+          {{skill}}
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+        <input
+          placeholder="{{'interview.newSkillPlaceholder' | translate}}"
+          #skillInput
+          [formControl]="skillControl"
+          [matAutocomplete]="auto"
+          [matChipInputFor]="chipList"
+          [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+          (matChipInputTokenEnd)="add($event)">
+      </mat-chip-list>
+      <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+        <mat-option *ngFor="let skill of filteredSkills | async" [value]="skill">
+          {{skill}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>{{'interview.jobExperience' | translate}}</mat-label>
+      <mat-select placeholder="{{'interview.experienceJobPlaceholder' | translate}}" formControlName="jobExperience">
+          <mat-option *ngFor="let exp of experiencieList" [value]="exp.value">{{exp.name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="form-area" appearance="outline">
+      <mat-label>{{'interview.jobDescription' | translate}}</mat-label>
+      <textarea matInput placeholder="{{'interview.descriptionJobPlaceholder' | translate}}" formControlName="jobDescription"></textarea>
+    </mat-form-field>
+  </p>
+    <div class="d-flex justify-content-center mt-4">
+      <button type="submit" mat-raised-button matStepperNext color="primary" class="button-next" style="font-size: larger;">{{'general.next' | translate}}</button>
+    </div>
+  </form>
+

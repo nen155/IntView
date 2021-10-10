@@ -1,0 +1,55 @@
+  <div class="d-flex justify-content-center" >
+  <div class="row align-items-center justify-content-center">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-xs-12" >
+        <mat-card class="card" matRipple>
+        <mat-card-header>
+          <mat-icon  mat-card-avatar>contact_support</mat-icon>
+          <mat-card-title>
+            {{ 'dashboard.questions' | translate }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>2</mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-xs-12" >
+      <mat-card class="card" matRipple>
+        <mat-card-header>
+          <mat-icon  mat-card-avatar>people</mat-icon>
+          <mat-card-title>
+            {{ 'dashboard.interviews' | translate }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>2</mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-xs-12" >
+      <mat-card class="card" matRipple>
+        <mat-card-header>
+          <mat-icon  mat-card-avatar>person_pin</mat-icon>
+          <mat-card-title>
+            {{ 'dashboard.interviewed' | translate }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>2</mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-xl-2 col-lg-4 col-md-6 col-sm-8 col-xs-12">
+      <button mat-raised-button class="card border border-dark text-center" color="accent" style="padding: 30px; font-size:larger; text-align: center;" routerLinkActive="active-link" routerLink="/add-interview">
+        <mat-icon>work</mat-icon> {{ 'dashboard.createInterview' | translate}}
+      </button>
+    </div>
+  </div>
+</div>
+
+  <mat-list>
+    <span *ngFor="let interview of interviews">
+      <mat-list-item *ngFor="let candidacy of interview.candidacys">
+        <img matListAvatar src="candidacy.candidate.image">
+        <h3 matLine> {{candidacy.candidate.name}} </h3>
+        <p matLine>
+          <span> {{interview.title}} </span>
+          <i class="far fa-play-circle"></i>
+        </p>
+      </mat-list-item>
+    </span>
+  </mat-list>

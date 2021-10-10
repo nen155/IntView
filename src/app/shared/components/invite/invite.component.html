@@ -1,0 +1,14 @@
+  <form [formGroup]="inviteForm" (ngSubmit)="onSubmit()">
+      <div>
+        <app-candidate-to-invite (removeEvent)="removeCandidate(i)" cdkDrag *ngFor="let candidate of inviteFormArray.controls; let i = index" [singleCandidateForm]="inviteFormArray.at(i)" [number]="i+1"></app-candidate-to-invite>
+        <button mat-button color="green" (click)="addCandidate()"><mat-icon>add</mat-icon>{{'candidate.addCandidate' | translate}}</button>
+      </div>
+      <div class="mt-5">
+        <app-invite-email></app-invite-email>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <button mat-raised-button matStepperPrevious class="button-next" color="secondary">Back</button>
+        <button mat-raised-button matStepperNext class="button-next" color="primary">Next</button>
+      </div>
+  </form>
+

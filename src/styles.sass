@@ -1,0 +1,132 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming'
+@import '~video.js/dist/video-js.css'
+@import '~videojs-playlist-ui/dist/videojs-playlist-ui.vertical.css'
+@include mat-core()
+
+
+$custom-collection: (warning :  #FFC116, success :  #0a630f, danger:    #c00000, green: #28a745, secondary:  #6c757d, contrast: ( secondary:#FFFFFF,  warning :  #000000, success :  #FFFFFF, danger:    #FFFFFF) )
+
+$my-app-primary: mat-palette($mat-indigo)
+$my-app-accent: mat-palette($mat-pink, A200, A100, A400)
+$my-app-warn: mat-palette($mat-red)
+
+$my-app-custom: mat-palette($custom-collection, custom)
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn) // this row your should have already in your code where you select palettes for primary, accent and warn
+$my-app-theme: map_merge($my-app-theme, (custom: $my-app-custom))
+$custom: map-get($my-app-theme, custom)
+
+@include angular-material-theme($my-app-theme)
+
+.mat-green-button
+  background-color: mat-color($custom, success)
+  color: mat-color($custom, success-contrast)
+
+.mat-green
+  color: mat-color($custom, green)
+
+.mat-secondary
+  background-color: mat-color($custom, secondary)
+  color: mat-color($custom, secondary-contrast)
+
+.display-flex
+    display: flex
+
+.margin-right-5
+    margin-right: 5px
+
+.margin-left-10
+    margin-left: 10px
+
+.spacer
+    flex: 1 1 auto
+
+.space-10
+    height: 10px
+
+.space-50
+    height: 50px
+
+.block
+    display: block !important
+
+.hidden
+    display: none
+
+mat-sidenav
+    border-right: none !important
+
+mat-sidenav-container
+    background-color: #f4f7fc !important
+
+.mat-elevation-z3
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,.05)
+
+.mat-elevation-z4
+    box-shadow: 0 3px 4px rgba(126,142,177,.12) !important
+
+.mat-elevation-z0
+    box-shadow: none
+
+.active-link
+    mat-icon
+        color: #3f51b5
+    font-weight: bold
+
+.inline
+    display: inline
+
+body
+    font-family: Roboto, Arial, sans-serif
+    margin: 0
+
+.mat-figure
+    display: initial !important
+
+.row
+  display: flex
+
+.column
+  flex: 50%
+
+.text-center
+  text-align: center
+
+.skills-chips
+  width: 100%
+
+.form-area
+  width: 100%
+  min-width: 150px
+  max-width: 650px
+
+.form-add
+  min-width: 470px
+  max-width: 650px
+  width: 100%
+  padding: 30px
+  height: 100%
+
+.button-next
+  min-width: 150px
+  max-width: 650px
+  width: 100%
+  padding: 10px !important
+
+.half-size
+  min-width: 450px
+  width: 50%
+  height: 100%
+  min-height: 100%
+
+.text-input
+  min-width: 150px
+  max-width: 350px
+  width: 100%
+
+.title-form
+  width: 60%
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+  line-height: 42px
+  margin-bottom: 15px
+

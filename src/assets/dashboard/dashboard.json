@@ -1,0 +1,35 @@
+{
+  "questions":2,
+  "interviews": [
+    {
+        "id": 1,
+        "name": "Informatico",
+        "interviewed": [
+          {
+            "id":1,
+            "name":"Rafa",
+            "image": "imageName.jpg"},
+          {
+            "id":1,
+            "name":"Daniel",
+            "image": "imageName.jpg"
+          }
+        ]
+    },
+    {
+      "id": 1,
+      "name": "Administrativo",
+      "interviewed": [
+        {
+          "id":1,
+          "name":"Roger",
+          "image": "imageName.jpg"},
+        {
+          "id":1,
+          "name":"Emilio",
+          "image": "imageName.jpg"
+        }
+      ]
+    }
+  ]
+}

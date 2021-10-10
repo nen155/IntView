@@ -1,0 +1,22 @@
+
+ <h4>Email para los candidatos</h4>
+ <mat-form-field style="width: 100%;" appearance="outline">
+  <mat-label>Saludo</mat-label>
+  <mat-select [(ngModel)]="greeting" name="greeting">
+    <mat-option *ngFor="let greet of greetings" [value]="greet">
+      {{greet}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field style="width: 100%;" appearance="outline">
+  <mat-label>Mensaje para el Candidato</mat-label>
+  <textarea class="text-comment" placeholder="Escribe un mensaje..." matInput rows="5" style="line-height: 30px;" [(ngModel)]="message"></textarea>
+</mat-form-field>
+
+<mat-form-field style="width: 100%;" appearance="outline">
+  <mat-label>Zona horaria</mat-label>
+  <mat-select  [(ngModel)]="timeZone" name="timeZone">
+     <mat-option *ngFor="let time of timeZones" [value]="time">{{time}}</mat-option>
+  </mat-select>
+</mat-form-field>

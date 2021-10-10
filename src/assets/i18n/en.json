@@ -1,0 +1,39 @@
+{
+    "toolbar": {
+        "login": "Login",
+        "business": "Business",
+        "users": "Users",
+        "stats": "Stats",
+        "vehicles": "Vehicles"
+    },
+
+    "general": {
+        "email": "Email",
+        "invalidEmail": "Invalid email",
+        "password": "Password",
+        "name": "Name",
+        "surname": "Surname",
+        "repeatPassword": "Repeat password",
+        "register": "Register",
+        "login": "Login",
+        "back": "Back",
+        "actions": "Actions",
+        "createAccount": "Create account"
+    },
+
+    "sidemenu": {
+        "business": "Business",
+        "vehicles": "Vehicles",
+        "users": "Users"
+    },
+
+    "business": {
+        "direction": "Direction",
+        "cif": "CIF",
+        "phone": "Phone",
+        "creationDate": "Creation Date",
+        "vehicles": "Vehicles",
+        "activated": "Activated",
+        "search": "Search business..."
+    }
+}

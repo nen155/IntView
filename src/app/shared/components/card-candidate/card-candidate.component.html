@@ -1,0 +1,23 @@
+<mat-card class="example-box" *ngIf="candidate" >
+  <div style="margin-bottom: -10px;">
+  <mat-grid-list cols="4">
+    <mat-grid-tile [colspan]="1"><img mat-card-avatar src="{{candidate.image}}" /></mat-grid-tile>
+    <mat-grid-tile [colspan]="3">
+      <mat-card-title style="font-size: medium;margin-bottom: 0;">{{candidate.name}}</mat-card-title>
+      <mat-card-subtitle>
+        <span class="clearfix">{{candidate.email}}</span>
+        <mat-star-rating *ngIf="candidate.score" [rating]="candidate.score"  [starCount]="starCount" [color]="starColor" (ratingUpdated)="onRatingChanged($event)"></mat-star-rating>
+      </mat-card-subtitle>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+  <mat-grid-list cols="8" >
+    <mat-grid-tile [colspan]="6" ><div class="text-inside-grid"><small>17, Mayo 2020 18:19</small></div></mat-grid-tile>
+    <!--<mat-grid-tile [colspan]="1">
+      <button mat-icon-button class="float-right" alt="Comentarios"><mat-icon>comment</mat-icon></button>
+    </mat-grid-tile>-->
+    <mat-grid-tile [colspan]="1">
+      <button mat-icon-button class="float-right" alt="Video entrevista" (click)="openInterview()"><mat-icon>ondemand_video</mat-icon></button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>

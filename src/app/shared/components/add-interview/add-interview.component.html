@@ -1,0 +1,44 @@
+<mat-horizontal-stepper [linear]="true" #stepper class="half-size" (selectionChange)="onStepChange($event)">
+  <mat-step [stepControl]="jobForm"> <!--[completed]="prueba" >-->
+    <ng-template matStepLabel>{{'interview.job' | translate}}</ng-template>
+    <div class="d-flex justify-content-center">
+      <app-job-form></app-job-form>
+    </div>
+  </mat-step>
+  <mat-step [stepControl]="questionForm">
+    <ng-template matStepLabel>{{'dashboard.questions' | translate}}</ng-template>
+    <div class="d-flex justify-content-center">
+      <app-questions></app-questions>
+    </div>
+  </mat-step>
+  <mat-step [stepControl]="videoPresentation">
+    <ng-template matStepLabel>Video presentación</ng-template>
+    <div class="d-flex justify-content-center">
+      <app-presentation-video></app-presentation-video>
+    </div>
+  </mat-step>
+  <mat-step [stepControl]="inviteForm">
+    <ng-template matStepLabel>Invitar candidatos</ng-template>
+    <div class="d-flex justify-content-center">
+      <app-invite></app-invite>
+    </div>
+  </mat-step>
+  <mat-step #lastStep>
+    <div style="text-align: center;">
+      <ng-template matStepLabel>Terminado!</ng-template>
+      <h4 class="title-form">Felicidades, has creado una entrevista</h4>
+      <h1> </h1>
+      <p>Con este enlace puedes compartir la entrevista con los candidatos o vuestro equipo:</p>
+      <mat-form-field appearance="outline">
+        <input matInput disabled [(ngModel)]="link">
+        <button matSuffix mat-raised-button color="secondary" [cdkCopyToClipboard]="link" style="width: 100%; margin-top: -1rem;">Copiar enlace</button>
+      </mat-form-field>
+      <div class="d-flex justify-content-center mt-4">
+        <button mat-raised-button matStepperPrevious class="button-next" color="success">Volver al escritorio</button>
+      </div>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
+<div class="diagnostics">
+  {{this.formAddInterviewService.mainForm.value | json}}
+</div>

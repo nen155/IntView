@@ -1,0 +1,362 @@
+{
+  "hired": [
+    {
+      "id":8,
+      "name":"Sergio",
+      "email":"ticjoserafael@gmail.com",
+      "image":"../assets/images/entrevista-rafa.jpg",
+      "score": 2,
+      "answers":[
+        {
+          "id": 1,
+            "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 5,
+            "description":"",
+            "question":{
+              "id": 1,
+                "important": true,
+                "readTime": 30,
+                "answerTime": 30,
+                "description": "",
+                "retries": 5,
+                "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+            }
+        },
+        {
+          "id": 2,
+          "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+          "score": 3,
+          "description":"¿Ha trabajado alguna vez con Entity Framework?",
+          "question":{
+            "id": 2,
+            "important": false,
+              "readTime": 30,
+              "answerTime": 30,
+              "description": "",
+              "retries": 5,
+            "title":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        }
+      ]
+    }
+  ],
+  "pass": [
+    {
+      "id":7,
+      "name":"Esteban",
+      "email":"ticjoserafael@gmail.com",
+      "image":"../assets/images/entrevista-rafa.jpg",
+      "score": 3,
+      "answers":[
+        {
+          "id": 1,
+            "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 5,
+            "description":"",
+            "question":{
+              "id": 1,
+                "important": true,
+                "readTime": 30,
+                "answerTime": 30,
+                "description": "",
+                "retries": 5,
+                "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+            }
+        },
+        {
+          "id": 2,
+          "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+          "score": 3,
+          "description":"¿Ha trabajado alguna vez con Entity Framework?",
+          "question":{
+            "id": 2,
+            "important": false,
+              "readTime": 30,
+              "answerTime": 30,
+              "description": "",
+              "retries": 5,
+            "title":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        }
+      ]
+    }
+  ],
+  "candidate":[
+    {
+      "id":6,
+      "name":"Ricardo",
+      "email":"ticjoserafael@gmail.com",
+      "image":"../assets/images/entrevista-rafa.jpg",
+      "score": 4,
+      "answers":[
+        {
+          "id": 1,
+            "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 5,
+            "description":"",
+            "question":{
+              "id": 1,
+                "important": true,
+                "readTime": 30,
+                "answerTime": 30,
+                "description": "",
+                "retries": 5,
+                "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+            }
+        },
+        {
+          "id": 2,
+          "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+          "score": 3,
+          "description":"¿Ha trabajado alguna vez con Entity Framework?",
+          "question":{
+            "id": 2,
+            "important": false,
+              "readTime": 30,
+              "answerTime": 30,
+              "description": "",
+              "retries": 5,
+            "title":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        }
+      ]
+    },
+    {
+      "id":7,
+      "name":"Helena",
+      "email":"variceliccat@gmail.com",
+      "image":"../assets/images/entrevista-rafa.jpg",
+      "score": 1,
+      "answers":[
+        {
+          "id": 1,
+            "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 5,
+            "description":"Mantenimiento de software",
+            "question":{
+              "id": 1,
+                "important": true,
+                "readTime": 30,
+                "answerTime": 30,
+                "description": "",
+                "retries": 5,
+                "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+            }
+        },
+        {
+          "id": 2,
+          "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+          "score": 3,
+          "description":"Si muchas veces",
+          "question":{
+            "id": 2,
+            "important": false,
+              "readTime": 30,
+              "answerTime": 30,
+              "description": "",
+              "retries": 5,
+            "title":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        }
+      ]
+    },
+    {
+      "id":9,
+      "name":"Bruno",
+      "email":"variceliccat@gmail.com",
+      "image":"../assets/images/entrevista-rafa.jpg",
+      "score": 4,
+      "answers":[
+        {
+          "id": 1,
+            "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 5,
+            "description":"Mantenimiento de software",
+            "question":{
+              "id": 1,
+                "important": true,
+                "readTime": 30,
+                "answerTime": 30,
+                "description": "",
+                "retries": 5,
+                "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+            }
+        },
+        {
+          "id": 2,
+          "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+          "score": 3,
+          "description":"Si muchas veces",
+          "question":{
+            "id": 2,
+            "important": false,
+              "readTime": 30,
+              "answerTime": 30,
+              "description": "",
+              "retries": 5,
+            "title":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        }
+      ]
+    },
+    {
+      "id":10,
+      "name":"Conrado",
+      "email":"variceliccat@gmail.com",
+      "image":"../assets/images/entrevista-rafa.jpg",
+      "score": 3,
+      "answers":[
+        {
+          "id": 1,
+            "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 5,
+            "description":"Mantenimiento de software",
+            "question":{
+              "id": 1,
+                "important": true,
+                "readTime": 30,
+                "answerTime": 30,
+                "description": "",
+                "retries": 5,
+                "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+            }
+        },
+        {
+          "id": 2,
+          "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+          "score": 3,
+          "description":"Si muchas veces",
+          "question":{
+            "id": 2,
+            "important": false,
+              "readTime": 30,
+              "answerTime": 30,
+              "description": "",
+              "retries": 5,
+            "title":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        }
+      ]
+    },
+    {
+      "id":11,
+      "name":"Marisol",
+      "email":"variceliccat@gmail.com",
+      "image":"../assets/images/entrevista-rafa.jpg",
+      "score": 2,
+      "answers":[
+        {
+          "id": 1,
+            "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 5,
+            "description":"Mantenimiento de software",
+            "question":{
+              "id": 1,
+                "important": true,
+                "readTime": 30,
+                "answerTime": 30,
+                "description": "",
+                "retries": 5,
+                "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+            }
+        },
+        {
+          "id": 2,
+          "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+          "score": 3,
+          "description":"Si muchas veces",
+          "question":{
+            "id": 2,
+            "important": false,
+              "readTime": 30,
+              "answerTime": 30,
+              "description": "",
+              "retries": 5,
+            "title":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        }
+      ]
+    }
+  ],
+  "reject":[
+    {
+      "id":4,
+      "name":"Sara",
+      "email":"ticjoserafael@gmail.com",
+      "image":"../assets/images/entrevista-rafa.jpg",
+      "score": 3,
+      "answers":[
+        {
+          "id": 1,
+            "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 5,
+            "description":"",
+            "question":{
+              "id": 1,
+                "important": true,
+                "readTime": 30,
+                "answerTime": 30,
+                "description": "",
+                "retries": 5,
+                "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+            }
+        },
+        {
+          "id": 2,
+          "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+          "score": 3,
+          "description":"¿Ha trabajado alguna vez con Entity Framework?",
+          "question":{
+            "id": 2,
+            "important": false,
+              "readTime": 30,
+              "answerTime": 30,
+              "description": "",
+              "retries": 5,
+            "title":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        }
+      ]
+    },
+    {
+      "id":5,
+      "name":"Sebastian",
+      "email":"nen156@gmail.com",
+      "image":"../assets/images/entrevista-rafa.jpg",
+      "score": 5,
+      "answers":[
+        {
+          "id": 1,
+            "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 5,
+            "description":"¿Cuales son las tareas que realizaba en su ultimo trabajo?",
+            "question":{
+              "id": 1,
+                "important": true,
+                "readTime": 30,
+                "answerTime": 30,
+                "description": "",
+                "retries": 5,
+                "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+            }
+        },
+        {
+          "id": 2,
+          "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+          "score": 3,
+          "description":"¿Ha trabajado alguna vez con Entity Framework?",
+          "question":{
+            "id": 2,
+            "important": false,
+              "readTime": 30,
+              "answerTime": 30,
+              "description": "",
+              "retries": 5,
+            "title":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        }
+      ]
+    }
+
+  ]
+}

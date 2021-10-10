@@ -1,0 +1,275 @@
+[
+  {
+  "id":1,
+  "name":"Informatico",
+  "createdDate":"25/05/2020",
+  "user":{
+    "name":"Mari Cruz"
+  },
+  "questions":[
+    {
+      "id": 1,
+        "important": true,
+        "readTime": 30,
+        "answerTime": 30,
+        "description": "",
+        "retries": 5,
+        "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+    },
+    {
+      "id": 2,
+      "important": false,
+        "readTime": 30,
+        "answerTime": 30,
+        "description": "",
+        "retries": 5,
+      "title":"¿Ha trabajado alguna vez con Entity Framework?"
+    }
+  ],
+  "candidacys":[
+    {
+      "id":1,
+      "acceptDate":"25/05/2020",
+      "invitateDate":"25/05/2020",
+      "deadLineDate":"25/05/2020",
+      "hireState":"hired",
+      "candidate":{
+        "id":1,
+        "name":"Rafa",
+        "email":"ticjoserafael@gmail.com",
+        "image":"../assets/images/entrevista-rafa.jpg",
+        "score": 7,
+        "answers":[
+          {
+            "id": 1,
+              "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+              "score": 5,
+              "description":""
+          },
+          {
+            "id": 2,
+            "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 3,
+            "description":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        ]
+      }
+    },
+    {
+      "id":2,
+      "acceptDate":"25/05/2020",
+      "invitateDate":"25/05/2020",
+      "deadLineDate":"25/05/2020",
+      "hireState":"reject",
+      "candidate":{
+        "id":2,
+        "name":"Emilio",
+        "email":"nen156@gmail.com",
+        "image":"../assets/images/entrevista-rafa.jpg",
+        "score": 3,
+        "questions":[
+          {
+            "id": 1,
+              "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+              "score": 5,
+              "description":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+          },
+          {
+            "id": 2,
+            "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 3,
+            "description":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        ]
+      }
+    },
+      {
+        "id":3,
+        "acceptDate":"25/05/2020",
+        "invitateDate":"25/05/2020",
+        "deadLineDate":"25/05/2020",
+        "hireState":"candidate",
+        "candidate":{
+          "id":3,
+          "name":"MariCruz",
+          "email":"variceliccat@gmail.com",
+          "image":"../assets/images/entrevista-rafa.jpg",
+          "score": 5,
+          "answers":[
+            {
+              "id": 1,
+                "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+                "score": 5,
+                "description":"Mantenimiento de software"
+            },
+            {
+              "id": 2,
+              "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+              "score": 3,
+              "description":"Si muchas veces"
+            }
+          ]
+        }
+      }
+  ],
+  "comments": [
+    {
+      "id":1,
+      "description":"Creo que no hes mal candidato",
+      "employee": {
+        "name":"Fernando"
+      }
+    },
+    {
+      "id":2,
+      "description":"Yo escogería otro",
+      "employee": {
+        "name":"Gonzalo"
+      }
+    }
+  ],
+  "files":[
+    {
+      "id":1,
+      "file":"curriculum.doc"
+    }
+  ]
+},
+
+{
+  "id":2,
+  "name":"C# Development",
+  "createdDate":"25/05/2020",
+  "user":{
+    "name":"Mari Cruz"
+  },
+  "questions":[
+    {
+      "id": 1,
+      "important": true,
+      "readTime": 30,
+      "answerTime": 30,
+      "description": "",
+      "retries": 5,
+        "title":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+    },
+    {
+      "id": 2,
+      "important": false,
+        "readTime": 30,
+        "answerTime": 30,
+        "description": "",
+        "retries": 5,
+      "title":"¿Ha trabajado alguna vez con Entity Framework?"
+    }
+  ],
+  "candidacys":[
+    {
+      "id":1,
+      "acceptDate":"25/05/2020",
+      "invitateDate":"25/05/2020",
+      "deadLineDate":"25/05/2020",
+      "hireState":"hired",
+      "candidate":{
+        "id":1,
+        "name":"Sara",
+        "email":"ticjoserafael@gmail.com",
+        "image":"../assets/images/entrevista-rafa.jpg",
+        "score": 7,
+        "answers":[
+          {
+            "id": 1,
+              "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+              "score": 5,
+              "description":""
+          },
+          {
+            "id": 2,
+            "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 3,
+            "description":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        ]
+      }
+    },
+    {
+      "id":2,
+      "acceptDate":"25/05/2020",
+      "invitateDate":"25/05/2020",
+      "deadLineDate":"25/05/2020",
+      "hireState":"reject",
+      "candidate":{
+        "id":2,
+        "name":"Sebastian",
+        "email":"nen156@gmail.com",
+        "image":"../assets/images/entrevista-rafa.jpg",
+        "score": 3,
+        "questions":[
+          {
+            "id": 1,
+              "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+              "score": 5,
+              "description":"¿Cuales son las tareas que realizaba en su ultimo trabajo?"
+          },
+          {
+            "id": 2,
+            "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+            "score": 3,
+            "description":"¿Ha trabajado alguna vez con Entity Framework?"
+          }
+        ]
+      }
+    },
+      {
+        "id":3,
+        "acceptDate":"25/05/2020",
+        "invitateDate":"25/05/2020",
+        "deadLineDate":"25/05/2020",
+        "hireState":"candidate",
+        "candidate":{
+          "id":3,
+          "name":"Lopez",
+          "email":"variceliccat@gmail.com",
+          "image":"../assets/images/entrevista-rafa.jpg",
+          "score": 5,
+          "answers":[
+            {
+              "id": 1,
+                "video": "1-nombreEntrevista-nombreEntrevistado.mp4",
+                "score": 5,
+                "description":"Mantenimiento de software"
+            },
+            {
+              "id": 2,
+              "video": "2-nombreEntrevista-nombreEntrevistado.mp4",
+              "score": 3,
+              "description":"Si muchas veces"
+            }
+          ]
+        }
+      }
+  ],
+  "comments": [
+    {
+      "id":1,
+      "description":"Creo que no hes mal candidato",
+      "employee": {
+        "name":"Fernando"
+      }
+    },
+    {
+      "id":2,
+      "description":"Yo escogería otro",
+      "employee": {
+        "name":"Gonzalo"
+      }
+    }
+  ],
+  "files":[
+    {
+      "id":1,
+      "file":"curriculum.doc"
+    }
+  ]
+}
+]

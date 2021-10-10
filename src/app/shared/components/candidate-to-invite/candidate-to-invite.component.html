@@ -1,0 +1,35 @@
+<mat-card class="example-box" [formGroup]="singleCandidateForm">
+  <div class="d-flex p-2 justify-content-end" style="width: 100%;">
+    <button mat-mini-fab color="warn"  class="closeButton" (click)="removeEvent.next(number)"><mat-icon class="closeButtonIcon">close</mat-icon></button>
+  </div>
+  <mat-card-title>Candidato {{nameForm.value}}</mat-card-title>
+  <mat-card-content>
+  <table style="border-spacing: 5px;border-collapse: separate;">
+    <tr>
+      <td>
+        <mat-form-field appearance="outline" class="text-input">
+          <mat-label>{{'candidate.fullNamePlaceHolder' | translate}}</mat-label>
+          <input matInput placeholder="{{'candidate.fullNamePlaceHolder' | translate}}" formControlName="nameForm">
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field appearance="outline" class="text-input">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput placeholder="Email" formControlName="emailForm">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <mat-form-field appearance="outline" class="text-input">
+          <mat-label>{{'candidate.phonePlaceHolder' | translate}}</mat-label>
+          <input type="tel" matInput placeholder="{{'candidate.phonePlaceHolder' | translate}}" formControlName="phoneForm">
+        </mat-form-field>
+      </td>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+  </mat-card-content>
+</mat-card>

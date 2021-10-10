@@ -1,0 +1,7 @@
+<mat-grid-list cols="2" rowHeight="2:2" style="background-color:lavender; padding: 16px;">
+  <mat-grid-tile><app-videoplayer (currentAnswer)="changeComments($event)" [options]="{ controls: true}" [playList]="playList"></app-videoplayer></mat-grid-tile>
+  <mat-grid-tile><h3>Comments</h3><app-comments [user]="user" [idQuestion]="1" [comments]="comments" (newComment)="addComment($event)" ></app-comments></mat-grid-tile>
+</mat-grid-list>
+
+
+

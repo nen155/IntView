@@ -1,0 +1,58 @@
+<div>
+  <div>
+    <div class="add-title">
+      <h2 class="primary">Filtro por puntuación</h2>
+  </div>
+  <div>
+      <form [formGroup]="form">
+        <div>
+          <h5>1. Puntuación mínima <span *ngIf="data.score_question">de la pregunta</span><span *ngIf="!data.score_question">del candidato</span></h5>
+          <p>
+              <mat-form-field>
+                  <input matInput placeholder="Puntuación" formControlName="score" required [(ngModel)]="score" type="number">
+                  <mat-error *ngIf="form.controls.score.hasError('required')">
+                      Introduce la puntuación mínima del candidato
+                  </mat-error>
+              </mat-form-field>
+          </p>
+        </div>
+        <mat-divider></mat-divider>
+        <div>
+          <h5>2. Candidatos que quieres filtrar</h5>
+          <p>
+            <mat-form-field>
+              <mat-label>Fase</mat-label>
+              <mat-select [formControl]="states" multiple required [(ngModel)]="statesSelecteds">
+                <mat-option *ngFor="let state of statesList" [value]="state">{{state.name}}</mat-option>
+              </mat-select>
+              <mat-error *ngIf="form.controls.states.hasError('required')">
+                Selecciona al menos un grupo de candidatos afectados
+            </mat-error>
+            </mat-form-field>
+          </p>
+        </div>
+        <div *ngIf="data.score_question">
+          <h5>3. Preguntas que tienen que tener esa puntuación</h5>
+          <p>
+            <mat-form-field>
+              <mat-label>Preguntas</mat-label>
+              <mat-select [formControl]="questions" multiple required [(ngModel)]="questionsSelecteds">
+                <mat-option *ngFor="let question of questionsList" [value]="question">{{question.title}}</mat-option>
+              </mat-select>
+              <mat-error *ngIf="form.controls.questions.hasError('required')">
+                Selecciona al menos una pregunta por la que filtrar
+            </mat-error>
+            </mat-form-field>
+          </p>
+        </div>
+        <div class="display-flex">
+            <span fxFlex></span>
+            <span class="spacer"></span>
+            <button [disabled]="!form.valid" mat-raised-button type="submit" color="primary"
+                (click)="applyFilter()">Filtrar</button>
+            <button mat-raised-button color="warn"
+                (click)="cancelFilter()" class="m-l-2">Candelar</button>
+        </div>
+    </form>
+  </div>
+</div>

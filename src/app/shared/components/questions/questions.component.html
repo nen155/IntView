@@ -1,0 +1,10 @@
+  <form [formGroup]="questionForm" (ngSubmit)="onSubmit()">
+      <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)" >
+        <app-question (removeEvent)="removeQuestion(i)" cdkDrag *ngFor="let question of questionsFormArray.controls; let i = index" [singleQuestionForm]="questionsFormArray.at(i)" [number]="i+1"></app-question>
+        <button mat-button color="green" (click)="addQuestion()"><mat-icon>add</mat-icon>{{'questions.addQuestion' | translate}}</button>
+      </div>
+    <div class="d-flex justify-content-center mt-4">
+      <button mat-raised-button matStepperPrevious class="button-next" color="secondary">Back</button>
+      <button mat-raised-button matStepperNext class="button-next" color="primary" type="submit">Next</button>
+    </div>
+  </form>

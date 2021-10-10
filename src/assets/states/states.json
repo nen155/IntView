@@ -1,0 +1,6 @@
+[
+  {"value": "candidate", "name": "Candidatos"},
+  {"value": "reject", "name": "Candidatos rechazados"},
+  {"value": "pass", "name": "Candidatos aceptados"},
+  {"value": "hired", "name": "Candidatos contratados"}
+]
